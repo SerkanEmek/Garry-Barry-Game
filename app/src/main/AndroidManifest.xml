@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.serkanemek.garrybarry">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.MainMenuActivity1"
+            android:screenOrientation="portrait"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1302760512340487~1398476805" />
+
+        <activity
+            android:name=".Activities.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Background"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CreditsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CheckStatisticForMainGames"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MathGameForMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CheckStatisticForNewChallengeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.NewEpisodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MemoryGame_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.IqGame_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MathGameForPractice_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MathLevelCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MainMenuActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".mediaplayer.MyMediaPlayerForNewChallenge" />
+    </application>
+
+</manifest>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background_MemoryGame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_memory_01"
+    tools:context=".Activities.MemoryGame_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="96dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewForTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangleforquestionandpoint"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="10dp"
+                    android:text="Best Score"
+                    android:textAlignment="center"
+                    android:textColor="#A7D5D2"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/textView_For_BestScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangleforquestionandpoint"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="10dp"
+                    android:text="Level 99"
+                    android:textAlignment="center"
+                    android:textColor="#A7D5D2"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/time_image" />
+
+                <TextView
+                    android:id="@+id/textView_timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="15"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_level"
+                android:layout_width="119dp"
+                android:layout_height="62dp"
+                android:background="@drawable/rectangleforquestionandpoint"
+                android:paddingLeft="4dp"
+                android:paddingTop="14dp"
+                android:text="Level: 30"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="109dp">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:id="@+id/textView_Remember2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circleforremember"
+                    android:paddingTop="9dp"
+                    android:text="999"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+                <TextView
+                    android:id="@+id/textView_Remember3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circleforremember"
+                    android:paddingTop="9dp"
+                    android:text="999"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="51dp"
+                    app:layout_column="0"
+                    app:layout_row="0" />
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_Remember1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circleforremember"
+                    android:paddingTop="9dp"
+                    android:text="999"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+                <TextView
+                    android:id="@+id/textView_Remember5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circleforremember"
+                    android:paddingTop="9dp"
+                    android:text="999"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_column="3"
+                    app:layout_row="0" />
+
+                <TextView
+                    android:id="@+id/textView_Remember4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circleforremember"
+                    android:paddingTop="9dp"
+                    android:text="999"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    app:layout_column="0"
+                    app:layout_row="0" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <TextView
+                android:id="@+id/textView_For_Comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keep the Numbers in mind"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/editTextNumber_Result2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circleforremember"
+                    android:hint='"?"'
+                    android:inputType="number"
+                    android:paddingTop="9dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+                <TextView
+                    android:id="@+id/editTextNumber_Result3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circleforremember"
+                    android:hint='"?"'
+                    android:inputType="number"
+                    android:paddingTop="9dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="28dp"
+                    app:layout_column="0"
+                    app:layout_row="0" />
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/editTextNumber_Result4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circleforremember"
+                    android:hint='"?"'
+                    android:inputType="number"
+                    android:paddingTop="9dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <TextView
+                    android:id="@+id/editTextNumber_Result5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circleforremember"
+                    android:hint='"?"'
+                    android:inputType="number"
+                    android:paddingTop="9dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_column="3"
+                    app:layout_row="0" />
+
+                <TextView
+                    android:id="@+id/editTextNumber_Result1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circleforremember"
+                    android:hint='"?"'
+                    android:inputType="number"
+                    android:paddingTop="9dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="17dp"
+                    app:layout_column="0"
+                    app:layout_row="0" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="437dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_column="1"
+                app:layout_row="0">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView_MemoryGame_Keyboard1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_1" />
+
+                    <ImageView
+                        android:id="@+id/imageView_MemoryGame_Keyboard2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_2" />
+
+                    <ImageView
+                        android:id="@+id/imageView_MemoryGame_Keyboard3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_3" />
+
+                    <ImageView
+                        android:id="@+id/imageView_MemoryGame_Keyboard4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_4" />
+
+                    <ImageView
+                        android:id="@+id/imageView_MemoryGame_Keyboard5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView_MemoryGame_Keyboard6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_6" />
+
+                    <ImageView
+                        android:id="@+id/imageView_MemoryGame_Keyboard7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_7" />
+
+                    <ImageView
+                        android:id="@+id/imageView_MemoryGame_Keyboard8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_8" />
+
+                    <ImageView
+                        android:id="@+id/imageView_MemoryGame_Keyboard9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_9" />
+
+                    <ImageView
+                        android:id="@+id/imageView_MemoryGame_Keyboard0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_0" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView_MemoryGame_Keyboardback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_back" />
+
+                    <ImageView
+                        android:id="@+id/imageView_MemoryGame_Keyboardok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_ok" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="67dp"
+                android:orientation="horizontal"
+                app:layout_column="0"
+                app:layout_row="0">
+
+                <ImageView
+                    android:id="@+id/imageView_For_MemoryGame_ChangeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="changequestion_button"
+                    app:srcCompat="@drawable/changequestionbutton2" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="51dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="69dp"
+                android:orientation="horizontal"
+                app:layout_column="2"
+                app:layout_row="0">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView_ForMemoryGame_Homeicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="home_button"
+                    app:srcCompat="@drawable/homeicon2" />
+            </LinearLayout>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewMemoryGameActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="609dp"></com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_01"
+    android:orientation="vertical"
+    tools:context=".Activities.CheckStatisticForNewChallengeActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout42"
+        android:layout_width="340dp"
+        android:layout_height="420dp"
+        android:layout_marginBottom="98dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout41">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_Statistic_id"
+                android:layout_width="105dp"
+                android:layout_height="42dp"
+                android:text="ID"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView_Statistic_Point"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Point"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout41"
+        android:layout_width="332dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout42"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView_For_Statistic"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            app:srcCompat="@drawable/checkstatistic" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout14"
+            android:layout_width="132dp"
+            android:layout_height="105dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_StatisticAverage_Title"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingTop="18dp"
+                android:text="Average"
+                android:textAlignment="center"
+                android:textColor="#E8D180"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/textView_for_average"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="000"
+                android:textAlignment="center"
+                android:textColor="#E8D180"
+                android:textSize="28sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

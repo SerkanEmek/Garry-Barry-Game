@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_graph"
+    app:startDestination="@id/memoryGameFragment">
+
+    <fragment
+        android:id="@+id/memoryGameFragment"
+        android:name="com.serkanemek.garrybarry.Fragments.MemoryGameFragment"
+        android:label="fragment_memory_game"
+        tools:layout="@layout/fragment_memory_game" >
+        <action
+            android:id="@+id/action_memoryGameFragment_to_iqGameFragment"
+            app:destination="@id/iqGameFragment" />
+        <argument
+            android:name="level"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="point"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/iqGameFragment"
+        android:name="com.serkanemek.garrybarry.Fragments.IqGameFragment"
+        android:label="fragment_iq_game"
+        tools:layout="@layout/fragment_iq_game" >
+        <action
+            android:id="@+id/action_iqGameFragment_to_mathGameFragment"
+            app:destination="@id/mathGameFragment" />
+        <argument
+            android:name="level"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="point"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/mathGameFragment"
+        android:name="com.serkanemek.garrybarry.Fragments.MathGameFragment"
+        android:label="fragment_math_game"
+        tools:layout="@layout/fragment_math_game" >
+        <action
+            android:id="@+id/action_mathGameFragment_to_triangleFragment"
+            app:destination="@id/triangleFragment" />
+        <action
+            android:id="@+id/action_mathGameFragment_to_rectangleFragment"
+            app:destination="@id/rectangleFragment" />
+        <action
+            android:id="@+id/action_mathGameFragment_to_XFigureFragment"
+            app:destination="@id/XFigureFragment" />
+        <argument
+            android:name="level"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="point"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/triangleFragment"
+        android:name="com.serkanemek.garrybarry.Fragments.TriangleFragment"
+        android:label="fragment_triangle"
+        tools:layout="@layout/fragment_triangle" >
+        <action
+            android:id="@+id/action_triangleFragment_to_memoryGameFragment"
+            app:destination="@id/memoryGameFragment" />
+        <argument
+            android:name="level"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="point"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/rectangleFragment"
+        android:name="com.serkanemek.garrybarry.Fragments.RectangleFragment"
+        android:label="fragment_rectangle"
+        tools:layout="@layout/fragment_rectangle" >
+        <action
+            android:id="@+id/action_rectangleFragment_to_memoryGameFragment"
+            app:destination="@id/memoryGameFragment" />
+        <argument
+            android:name="level"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="point"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/XFigureFragment"
+        android:name="com.serkanemek.garrybarry.Fragments.XFigureFragment"
+        android:label="fragment_x_figure"
+        tools:layout="@layout/fragment_x_figure" >
+        <action
+            android:id="@+id/action_XFigureFragment_to_memoryGameFragment"
+            app:destination="@id/memoryGameFragment" />
+        <argument
+            android:name="level"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="point"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

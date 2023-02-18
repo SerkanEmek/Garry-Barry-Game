@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_01"
+    tools:context=".Activities.MathLevelCheckActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <CheckBox
+                android:id="@+id/checkBox_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@drawable/backgroundformathleveloperations"
+                android:buttonTint="?attr/colorBackgroundFloating"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/white"
+                android:textColorLink="@android:color/white"
+                android:textSize="88dp" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/checkBox_subs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@drawable/backgroundformathleveloperations"
+                android:buttonTint="?attr/colorBackgroundFloating"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/white"
+                android:textColorLink="@android:color/white"
+                android:textSize="88dp" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/checkBox_mult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@drawable/backgroundformathleveloperations"
+                android:buttonTint="?attr/colorBackgroundFloating"
+                android:text="x"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/white"
+                android:textColorLink="@android:color/white"
+                android:textSize="88dp" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/checkBox_divi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@drawable/backgroundformathleveloperations"
+                android:buttonTint="?attr/colorBackgroundFloating"
+                android:text="÷"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/white"
+                android:textColorLink="@android:color/white"
+                android:textSize="88dp" />
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/gridLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+            <ImageView
+                android:id="@+id/imageView_level2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:onClick="level_2"
+                app:srcCompat="@drawable/level2" />
+
+            <ImageView
+                android:id="@+id/imageView_level3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:onClick="level_3"
+                app:srcCompat="@drawable/level3" />
+
+            <ImageView
+                android:id="@+id/imageView_level4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:onClick="level_4"
+                app:srcCompat="@drawable/level4" />
+
+            <ImageView
+                android:id="@+id/imageView_level5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:onClick="level_5"
+                app:srcCompat="@drawable/level5" />
+
+            <ImageView
+                android:id="@+id/imageView_level6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:onClick="level_6"
+                app:srcCompat="@drawable/level6" />
+
+            <ImageView
+                android:id="@+id/imageView_level1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:onClick="level_1"
+                app:srcCompat="@drawable/level1" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="62dp"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <Space
+                android:layout_width="88dp"
+                android:layout_height="10dp"
+                android:layout_row="1"
+                android:layout_column="0" />
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="10dp"
+                android:layout_row="3"
+                android:layout_column="0" />
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_01"
+    tools:context=".Fragments.BGMathPracticeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageView
+                android:id="@+id/imageView_bg_math_practice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mathgame_forpractice_image" />
+
+            <TextView
+                android:id="@+id/textView_Bg_MathPractice_Diamond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circlefordiamondbg"
+                android:paddingLeft="36dp"
+                android:paddingTop="16dp"
+                android:text="99"
+                android:textColor="#D3E5ED"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"></TextView>
+        </LinearLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="149dp">
+
+            <ImageView
+                android:id="@+id/imageView_bg_MathPractice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_math_practice_icon_01"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageView
+                android:id="@+id/imageView_bg_MathPractice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_math_practice_icon_02"
+                app:layout_column="3"
+                app:layout_row="0" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <ImageView
+                android:id="@+id/imageView_bg_MathPractice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_math_practice_icon_03"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <ImageView
+                android:id="@+id/imageView_bg_MathPractice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_darkmood_icon"
+                app:layout_column="3"
+                app:layout_row="2" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_01"
+    tools:context=".Activities.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="138dp"
+        android:layout_height="413dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_Setting_MusicOnOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="buttonCheckMusic"
+                app:srcCompat="@drawable/musiciconon" />
+
+            <Space
+                android:layout_width="54dp"
+                android:layout_height="17dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView_Setting_SoundOnOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonCheckSound"
+                app:srcCompat="@drawable/soundon" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView_Setting_VibrationOnOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="vibration_Setting"
+            app:srcCompat="@drawable/vibrationon" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView_Setting_Credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="credits_Setting"
+            app:srcCompat="@drawable/credits" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView_Setting_CgangeLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeLanguage_Setting"
+            app:srcCompat="@drawable/changelanguageimagelogo" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView_Setting_homeIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="home_Setting_icon"
+            app:srcCompat="@drawable/homeicon2" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

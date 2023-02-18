@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/check_statistic" android:title="Check Statistic"></item>
+<item android:id="@+id/change_language" android:title="Change Language"></item>
+<item android:id="@+id/quit" android:title="Quit"></item>
+</menu>

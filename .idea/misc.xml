@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/activity_background.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/activity_check_statistic_for_main_games.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/activity_iqgame.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/activity_main_menu1.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/activity_main_menu2.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/activity_math_game_for_main.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/activity_mathgameforpractice_.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/activity_mathlevelcheck.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/activity_memorygame.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/activity_new_episode.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/activity_setting.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/fragment_b_g_iq.xml" value="0.25" />
+        <entry key="..\:/Users/serka/AndroidStudioProjects/garrybarry/app/src/main/res/layout/fragment_iq_game.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

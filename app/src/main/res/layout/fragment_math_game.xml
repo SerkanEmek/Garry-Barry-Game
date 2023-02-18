@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_challenge_01"
+    tools:context=".Fragments.MathGameFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_level4"
+                android:layout_width="134dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rectangleforquestionandpoint"
+                android:paddingLeft="8dp"
+                android:paddingTop="7dp"
+                android:text="Question 1"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="54dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView_MathGameFragment_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/time_image" />
+
+            <TextView
+                android:id="@+id/textView_timer4"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="6dp"
+                android:text="10"
+                android:textAlignment="viewStart"
+                android:textColor="#070707"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_Score_ForMathGame"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rectangleforquestionandpoint"
+                android:paddingTop="8dp"
+                android:text="Score: 90"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="79dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_NewMath1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_for_mathgame"
+                    android:paddingTop="12sp"
+                    android:text="123"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="32sp"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_operation_forMathgame1"
+                        android:layout_width="90dp"
+                        android:layout_height="70dp"
+                        android:paddingTop="8dp"
+                        android:text="%"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="50sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_NewMath2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_for_mathgame"
+                    android:paddingTop="12sp"
+                    android:text="123"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="32sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_operation_forMathgame2"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:paddingTop="8dp"
+                        android:text="%"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="50sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_NewMath3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_for_mathgame"
+                    android:paddingTop="12sp"
+                    android:text="123"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="32sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editText_result_forMathgame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleforuser"
+                android:hint='"?"'
+                android:paddingTop="8dp"
+                android:textAlignment="center"
+                android:textColor="#021442"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView_MathGame_Fragment_Keyboard1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/keyboard_green_1" />
+
+                <ImageView
+                    android:id="@+id/imageView_MathGame_Fragment_Keyboard2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/keyboard_green_2" />
+
+                <ImageView
+                    android:id="@+id/imageView_MathGame_Fragment_Keyboard3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/keyboard_green_3" />
+
+                <ImageView
+                    android:id="@+id/imageView_MathGame_Fragment_Keyboard4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/keyboard_green_4" />
+
+                <ImageView
+                    android:id="@+id/imageView_MathGame_Fragment_Keyboard5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/keyboard_green_5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView_MathGame_Fragment_Keyboard6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/keyboard_green_6" />
+
+                <ImageView
+                    android:id="@+id/imageView_MathGame_Fragment_Keyboard7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/keyboard_green_7" />
+
+                <ImageView
+                    android:id="@+id/imageView_MathGame_Fragment_Keyboard8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/keyboard_green_8" />
+
+                <ImageView
+                    android:id="@+id/imageView_MathGame_Fragment_Keyboard9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/keyboard_green_9" />
+
+                <ImageView
+                    android:id="@+id/imageView_MathGame_Fragment_Keyboard0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/keyboard_green_0" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView_MathGame_Fragment_Keyboardback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/keyboard_green_back" />
+
+                <ImageView
+                    android:id="@+id/imageView_MathGame_Fragment_Keyboardok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/keyboard_green_ok" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

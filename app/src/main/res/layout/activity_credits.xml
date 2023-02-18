@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_01"
+    tools:context=".Activities.CreditsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView_Credits_DeveloperTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developer"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_Credits_DeveloperName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serkan EMEK"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:id="@+id/textView_Credits_MusicsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Musics"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Musics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Musics: https://audiotrimmer.com/royalty-free-music/"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:id="@+id/textView_Credits_BackgroundsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backgrounds"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Mathias P.R. Reding from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Aaron Kittredge from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by FWStudio from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Scott Webb from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Math from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Giftpunditscom from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Tim Mossholder from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Pixabay from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Rahul from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Mitchell Luo  from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Sergio Souza  from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Anete Lusina  from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by DLKR Life from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Henry Co from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Mike from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Eriks Abzinovs from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView_Credits_Backgrounds16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo by Ready made from Pexels"
+            android:textColor="#FFFFFF" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <ImageView
+            android:id="@+id/imageView_homeIcon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="home_Credits_icon"
+            app:srcCompat="@drawable/homeicon2" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

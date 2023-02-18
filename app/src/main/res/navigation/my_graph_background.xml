@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_graph_background"
+    app:startDestination="@id/backgroundMainFragment">
+
+    <fragment
+        android:id="@+id/backgroundMainFragment"
+        android:name="com.serkanemek.garrybarry.Fragments.BGMainFragment"
+        android:label="fragment_background_main"
+        tools:layout="@layout/fragment_b_g_main" >
+        <action
+            android:id="@+id/action_backgroundMainFragment_to_backgroundMemoryGameFragment"
+            app:destination="@id/backgroundMemoryGameFragment" />
+        <action
+            android:id="@+id/action_backgroundMainFragment_to_backgroundIqGameFragment"
+            app:destination="@id/backgroundIqGameFragment" />
+        <action
+            android:id="@+id/action_backgroundMainFragment_to_BGMathFragment"
+            app:destination="@id/BGMathFragment" />
+        <action
+            android:id="@+id/action_backgroundMainFragment_to_BGMathPracticeFragment"
+            app:destination="@id/BGMathPracticeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/backgroundMemoryGameFragment"
+        android:name="com.serkanemek.garrybarry.Fragments.BGMemoryFragment"
+        android:label="fragment_background_memory_game"
+        tools:layout="@layout/fragment_b_g_memory" >
+        <action
+            android:id="@+id/action_backgroundMemoryGameFragment_to_backgroundMainFragment"
+            app:destination="@id/backgroundMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/backgroundIqGameFragment"
+        android:name="com.serkanemek.garrybarry.Fragments.BGIqFragment"
+        android:label="fragment_background_iq_game"
+        tools:layout="@layout/fragment_b_g_iq" >
+        <action
+            android:id="@+id/action_backgroundIqGameFragment_to_backgroundMainFragment"
+            app:destination="@id/backgroundMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BGMathFragment"
+        android:name="com.serkanemek.garrybarry.Fragments.BGMathFragment"
+        android:label="fragment_b_g_math"
+        tools:layout="@layout/fragment_b_g_math" >
+        <action
+            android:id="@+id/action_BGMathFragment_to_backgroundMainFragment"
+            app:destination="@id/backgroundMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BGMathPracticeFragment"
+        android:name="com.serkanemek.garrybarry.Fragments.BGMathPracticeFragment"
+        android:label="fragment_b_g_math_practice"
+        tools:layout="@layout/fragment_b_g_math_practice" >
+        <action
+            android:id="@+id/action_BGMathPracticeFragment_to_backgroundMainFragment"
+            app:destination="@id/backgroundMainFragment" />
+    </fragment>
+</navigation>

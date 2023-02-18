@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background_MathGamePractice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_math_practice_01"
+    tools:context=".Activities.MathGameForPractice_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_MathGame_For_Coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circleforcoins"
+                android:paddingLeft="12dp"
+                android:paddingTop="18dp"
+                android:text="Coins:100"
+                android:textAlignment="viewStart"
+                android:textColor="#FAED02"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                tools:layout_editor_absoluteX="271dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="60dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_for_mathgame"
+                        android:paddingTop="8dp"
+                        android:text="115"
+                        android:textAlignment="center"
+                        android:textColor="#E8ECBA"
+                        android:textSize="32sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_operation"
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:text="%"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="57sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_number2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_for_mathgame"
+                        android:paddingTop="8dp"
+                        android:text="115"
+                        android:textAlignment="center"
+                        android:textColor="#E8ECBA"
+                        android:textSize="32sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_operation2"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:text="%"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="57sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_number3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_for_mathgame"
+                        android:paddingTop="8dp"
+                        android:text="115"
+                        android:textAlignment="center"
+                        android:textColor="#E8ECBA"
+                        android:textSize="32sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteY="369dp">
+
+            <ImageView
+                android:id="@+id/imageView_ForMathGamePractice_changequestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="changequestion"
+                app:layout_column="0"
+                app:layout_row="0"
+                app:srcCompat="@drawable/changequestionbutton" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_column="1"
+                app:layout_row="0">
+
+                <TextView
+                    android:id="@+id/textView_ForMath_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circleforuser"
+                    android:hint='"?"'
+                    android:paddingTop="8dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView_keyboard1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_1" />
+
+                    <ImageView
+                        android:id="@+id/imageView_keyboard2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_2" />
+
+                    <ImageView
+                        android:id="@+id/imageView_keyboard3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_3" />
+
+                    <ImageView
+                        android:id="@+id/imageView_keyboard4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_4" />
+
+                    <ImageView
+                        android:id="@+id/imageView_keyboard5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView_keyboard6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_6" />
+
+                    <ImageView
+                        android:id="@+id/imageView_keyboard7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_7" />
+
+                    <ImageView
+                        android:id="@+id/imageView_keyboard8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_8" />
+
+                    <ImageView
+                        android:id="@+id/imageView_keyboard9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_9" />
+
+                    <ImageView
+                        android:id="@+id/imageView_keyboard0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_0" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView_keyboardback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_back" />
+
+                    <ImageView
+                        android:id="@+id/imageView_keyboardok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/keyboard_green_ok" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView_ForMathGamePractice_HomeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="homeicon"
+                app:layout_column="2"
+                app:layout_row="0"
+                app:srcCompat="@drawable/homeicon" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewMathGameForPractice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="609dp"></com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
