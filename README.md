@@ -1,11 +1,12 @@
-# Garry-Barry-Game
+# Garry-Barry-Game from Google Play
 
+https://play.google.com/store/apps/details?id=com.serkanemek.garrybarry&hl=tr&gl=US
 
 * Lifecycle
 * Navigation
 * Animation
 * Recyclerview
-* Servis
+* Service
 * Sqlite
 * Google ads
 * Typeface
